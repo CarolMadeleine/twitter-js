@@ -7,6 +7,7 @@ window.addEventListener("load", function(){
         box(contenedor);
         mensaje.value="";
         boton.disabled ="true";
+        textoNormal();
     });
     function box(contenedor){
     	var div = document.createElement("div");
@@ -14,7 +15,7 @@ window.addEventListener("load", function(){
     	var resultado = document.getElementById("resultado");
     	resultado.insertBefore(div, resultado.childNodes[0]);
     }
-    mensaje.addEventListener("keydown", function(){
+    mensaje.addEventListener("keyup", function(){
     	boton.disabled = false;
     	var limite = 140;
     	var longitud = mensaje.value.length;
@@ -37,6 +38,16 @@ window.addEventListener("load", function(){
     		contador.style.color = "green";
     	}
     });
+
+    mensaje.addEventListener("keydown", textoGrande);
+
+ 	function textoGrande(){
+ 		mensaje.style.cssText = "height:auto";
+     	mensaje.style.cssText = "height: " + mensaje.scrollHeight + "px";
+	}
+	function textoNormal(){
+ 		mensaje.style.cssText = "height:auto";
+	}
 });
 
 
