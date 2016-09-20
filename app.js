@@ -22,9 +22,39 @@ window.addEventListener("load", function(){
 
     	if (longitud<=limite) {
     		contador.innerText = limite - longitud;
+    	}else{
+    		contador.innerText = limite - longitud;
+    	}
+    	if(longitud > limite){
+    		boton.disabled = true;	
+    	}
+    	if(longitud >=120){
+    		contador.style.color = "blue";
+    	}else{
+    		contador.style.color = "#BBC5CD";
+    	}
+    	if(longitud >=130){
+    		contador.style.color = "green";
     	}
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*var hermano = document.createElement("div");
         hermano.innerText = texto;

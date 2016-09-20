@@ -8,13 +8,19 @@
 <body>
 <div class="fondo">
 		<form>
-		<h4 class="titulo">Twitter</h4>
-		<textarea name="mensaje" id="mensaje" placeholder="Escribe aquí ..." required="required"></textarea><br>
-		<span id="contador">140</span><br>
-		<button id="enviar" type="submit" disabled="true">Enviar</button><br>
+		<img src="perfil.png" class="imagen">
+		<textarea name="mensaje" id="mensaje" class="mensaje" placeholder="¿Que está pasando?" required="required"></textarea><br>
+		<img src="t1.png" alt="" class="imagen2">
+		<button id="enviar" type="submit" disabled="true">Twittear</button>
+		<span id="contador" class="contador">140</span>
 	    </form>
+	<div id="caja">
+		<img src="perfil.png" class="imagen">
+		<p class="nombre">Carol Madeleine</p><span class="arroba">@Carol Madeleine .</span>
+		<div id = "resultado" class="resultado"></div>
+		<img src="t2.png" class="twit">
 	</div>
-	<div id="resultado" class="resul"></div>
+</div>
 	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
