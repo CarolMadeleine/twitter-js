@@ -13,7 +13,10 @@ window.addEventListener("load", function(){
     	var div = document.createElement("div");
     	div.innerText = contenedor;
     	var resultado = document.getElementById("resultado");
+    	var n = new Date().toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
+        div.innerText = contenedor + "  " + n;
     	resultado.insertBefore(div, resultado.childNodes[0]);
+
     }
     mensaje.addEventListener("keyup", function(){
     	boton.disabled = false;
@@ -50,31 +53,3 @@ window.addEventListener("load", function(){
 	}
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*var hermano = document.createElement("div");
-        hermano.innerText = texto;
-
-        if(!box.childNodes[0]){
-            box.appendChild(hermano);
-        }
-        else{
-            box.insertBefore(hermano, box.childNodes[0]);
-        }
-
-        hermano.classList.add("tweets");*/
