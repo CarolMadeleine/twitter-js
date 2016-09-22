@@ -3,23 +3,36 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="main.css">
+	<link rel="shortcut icon" href="image/faviconTwitter.ico">
 	<title>Twitter</title>
 </head>
 <body>
 <div class="fondo">
-		<form>
-		<img src="perfil.png" class="imagen">
-		<textarea type="text" name="mensaje" id="mensaje" class="mensaje" placeholder="¿Que está pasando?" required="required" rows="2"></textarea><br>
-		<img src="t1.png" alt="" class="imagen2">
+	<div class="twitterPerfil">
+		<div class="boxblack">
+			<img src="image/fotoPerfil.png" class="fotoPerfil">
+		</div>
+		<div class="boxwhite">
+			<a href="#" class="titulo">Carol Madeleine</a><br>
+			<p class="arroba perfil">@Carol Madeleine</p>
+			<div class="tweets">
+				<p class="gray">TWEETS</p>
+				<p class="gray">SIGUIENDO</p>
+				<p class="gray">SEGUIDORES</p><br>
+				<span id="numeroContador" class="numero">0</span>
+				<span id="numero" class="numero dos">80</span>
+				<span id="numero" class="numero tres">40</span>
+			</div>
+		</div>
+	</div>
+	<form>
+		<img src="image/perfil.png" class="imagen">
+		<textarea type="text" name="mensaje" id="mensaje" class="mensaje" placeholder="¿Que está pasando?" required="required" rows="2" cols="40"></textarea><br>
+		<img src="image/t1.png" alt="" class="imagen2">
 		<button id="enviar" type="submit" disabled="true">Twittear</button>
 		<span id="contador" class="contador">140</span>
-	    </form>
-	<div id="caja">
-		<img src="perfil.png" class="imagen">
-		<p class="nombre">Carol Madeleine</p><span class="arroba">@Carol Madeleine .</span>
-		<div id = "resultado" class="resultado"></div>
-		<img src="t2.png" class="twit">
-	</div>
+	</form>
+		<div id="caja"></div>
 </div>
 	<script type="text/javascript" src="app.js"></script>
 </body>

@@ -5,16 +5,67 @@
   font-family: helvetica;
 }
 body{
-  background-image: url(fondo.jpg);
+  background-image: url(image/fondo.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 .fondo{
-  padding: 140px 60px;
+  padding: 60px 0px;
+}
+/*CAJAS*/
+.twitterPerfil{
+  display: inline-block;
+  margin-left: 120px;
+}
+.boxblack{
+  height: 100px;
+  width: 320px;
+  background-color: black;
+  border-radius: 8px 8px 0px 0px;
+}
+/*caja blanca*/
+.boxwhite{
+  height: 100px;
+  width: 320px;
+  background-color: white;
+  border-radius: 0px 0px 8px 8px;
 }
 .titulo{
-  color: white;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 100px;
 }
+.perfil{
+  margin-left: 100px;
+}
+.fotoPerfil{
+  position: relative;
+  margin-left: 20px;
+  margin-top: 60px;
+}
+.gray{
+  margin: 12px 20px 0px 20px;
+  display: inline-block;
+  font-size: 10px;
+  color: #C0C9CD;
+}
+.numero{
+  font-size: 18px;
+  padding-top: 3px;
+  color: #C0C9CD;
+  font-weight: bold;
+  margin-left:20px;
+}
+.dos{
+  margin-left:70px;
+}
+.tres{
+  margin-left:80px;
+}
+
+/*FORMAS*/
 form{
   display: inline-block;
   padding: 20px;
@@ -23,16 +74,13 @@ form{
   border: 1px solid #DDE2E6;
   margin: 0px 80px;
 }
-img .image{
-  float: 20px;
-}
 .contador{
   color: #9999AD;
 }
 .mensaje{
   border: 1px solid #DDE2E6;
   border-radius: 2px;
-  padding: 10px 140px 10px 10px;
+  padding: 10px;
   font-size: 14px;
 }
 button:hover{
@@ -48,8 +96,12 @@ button{
   color: white;
   font-weight: bold;
 }
+.hora{
+  color: #9599AD;
+}
 .nombre{
   font-weight: bold;
+  color: black;
   display: inline-block;
 }
 .arroba{
@@ -57,14 +109,18 @@ button{
   font-size: 12px;
   color: #8899A6;
 }
-#caja{
-  display: inline-block;
+.entrada{
+  word-wrap: break-word;
+}
+.caja{
   font-size: 14px;
-  padding: 20px;
+  padding: 10px 20px;
   background-color:#FFFFFF;
   border-radius: 4px;
   border: 1px solid #DDE2E6;
+  width: 30%;
+  margin: 10px 20px;
 }
-.resultado{
-  word-wrap: break-word;
+#caja #bloque{
+  display: inline-block;
 }
